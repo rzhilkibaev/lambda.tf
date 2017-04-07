@@ -38,7 +38,7 @@ resource "aws_iam_role" "main" {
 EOF
 }
 
-output "lambda_arn" { value = "${aws_lambda_function.main.arn}" }
-output "lambda_qualified_arn" { value = "${aws_lambda_function.main.qualified_arn}" }
-output "lambda_version" { value = "${aws_lambda_function.main.version}" }
+output "function_arn" { value = "${aws_lambda_function.main.arn}" }
+output "function_qualified_arn" { value = "${aws_lambda_function.main.qualified_arn}" }
+output "function_version" { value = "${aws_lambda_function.main.version}" }
 output "role_arn" { value = "${aws_iam_role.main.arn}" }
